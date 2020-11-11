@@ -1,4 +1,4 @@
-table {
+/* table {
       width: 400px;
       margin: 0;
       border-collapse: collapse;
@@ -34,4 +34,18 @@ input{
 th{
       margin: 0;
       padding: 0;
+} */
+img{
+      display:block;
+      width: 900px;
+      height: 100px;
+      margin: 10px auto;
+      border: 2px solid white;
+      box-shadow: 2px 2px 2px 2px black;
+}
+.puzzle {
+      margin: 0 auto;
+}
+.bbb{
+      margin: 0 auto;
 }
