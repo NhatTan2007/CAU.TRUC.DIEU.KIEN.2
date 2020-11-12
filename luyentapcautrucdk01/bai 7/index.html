@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</title>
+      <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+      <table>
+            <thead>
+                  <tr>
+                        <th rowspan="2">Số phút gọi ngoại mạng</th>
+                        <th rowspan="2">Số phút gọi nội mạng</th>
+                        <th colspan="2">Đơn giá</th>
+                  </tr>
+                  <tr>
+                        <th>Đơn giá ngoại mạng</th>
+                        <th>Đơn giá nội mạng</th>
+                  </tr>
+            </thead>
+            <tbody>
+
+                  <tr>
+                        <td><input type="number" name="offNetMinutes" id="offNetMinutes"></td>
+                        <td><input type="number" name="onNetMinutes" id="onNetMinutes"></td>
+                        <td id="offNetPricing">2.300</td>
+                        <td id="onNetPricing">1.200</td>
+                  </tr>
+            </tbody>
+            <tfoot>
+                  <tr>
+                        <td><button style="font-weight:bold; width: 100%;" id="btnCalPhoneCharge">Tính tổng cước</button></td>
+                        <td id="totalPhoneCharge" colspan="3"></td>
+                  </tr>
+            </tfoot>
+      </table>
+
+      <script src="/myscript.js"></script>
+</body>
+</html>

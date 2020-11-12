@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+      <table>
+            <caption style="font-size: 1.5rem;"><strong>BẢNG ĐIỂM MÔN TOÁN</strong></caption>
+            <thead>
+                  <tr>
+                        <th rowspan="2">STT</th>
+                        <th rowspan="2">Tên học sinh</th>
+                        <th colspan="3">Điểm thành phần</th>
+                        <th rowspan="2">Điểm trung bình</th>
+                        <th rowspan="2">Xếp loại</th>
+                  </tr>
+                  <tr>
+                        <td>Điểm kiểm tra</td>
+                        <td>Điểm thi giữa kìa</td>
+                        <td>Điểm thi cuối kỳ</td>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>1</td>
+                        <td>Trần Quang Huy</td>
+                        <td><input type="number" name="scoreExam1" id="scoreExam1"></td>
+                        <td><input type="number" name="scoreMidTerm1" id="scoreMidTerm1"></td>
+                        <td><input type="number" name="scoreFinalTerm1" id="scoreFinalTerm1"></td>
+                        <td id="averageScore1"></td>
+                        <td id="classification1"></td>
+                  </tr>
+                  <tr>
+                        <td>2</td>
+                        <td>Trương Duy Quang</td>
+                        <td><input type="number" name="scoreExam2" id="scoreExam2"></td>
+                        <td><input type="number" name="scoreMidTerm2" id="scoreMidTerm2"></td>
+                        <td><input type="number" name="scoreFinalTerm2" id="scoreFinalTerm2"></td>
+                        <td id="averageScore2"></td>
+                        <td id="classification2"></td>
+                  </tr>
+                  <tr>
+                        <td>1</td>
+                        <td>Nguyễn Công Quốc</td>
+                        <td><input type="number" name="scoreExam3" id="scoreExam3"></td>
+                        <td><input type="number" name="scoreMidTerm3" id="scoreMidTerm3"></td>
+                        <td><input type="number" name="scoreFinalTerm3" id="scoreFinalTerm3"></td>
+                        <td id="averageScore3"></td>
+                        <td id="classification3"></td>
+                  </tr>
+            </tbody>
+      </table>
+      <script src="/myscript.js"></script>
+</body>
+</html>

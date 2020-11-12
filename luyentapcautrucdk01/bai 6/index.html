@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <table>
+            <tbody>
+                  <tr>
+                        <td>Doanh số bán hàng&#40;VND&#41;</td>
+                        <td><input type="number" name="revenue" id="revenue"></td>
+                        <td>Tỷ lệ hoa hồng&#40;%&#41;</td>
+                        <td><input type="number" name="commission" id="commission"></td>
+                        <td><button type="submit" id="calCommission">Hoa hồng nhận được</button></td>
+                        <td id="yourCommission"></td>
+                  </tr>
+            </tbody>
+      </table>
+      
+      
+      <script>
+            document.getElementById("calCommission").addEventListener("click",calCommission);
+
+            function calCommission() {
+                  if (document.getElementById("revenue").value < 0 || document.getElementById("commission").value < 0 || document.getElementById("commission").value > 100) {
+                        alert("Đề nghị kiểm tra lại dữ liệu đã nhập");
+                  } else {
+                        let yourCommission = document.getElementById("revenue").value*document.getElementById("commission").value/100;
+                        document.getElementById("yourCommission").innerHTML = yourCommission;
+                  }
+                  
+            }
+            
+      </script>
+</body>
+</html>
